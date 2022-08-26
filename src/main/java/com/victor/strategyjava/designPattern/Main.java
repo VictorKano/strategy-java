@@ -1,9 +1,6 @@
 package com.victor.strategyjava.designPattern;
 
-import com.victor.strategyjava.adapters.FacebookAdapter;
-import com.victor.strategyjava.adapters.LinkedinAdapter;
-import com.victor.strategyjava.adapters.TwitterAdapter;
-import com.victor.strategyjava.adapters.WhatsAppAdapter;
+import com.victor.strategyjava.adapters.*;
 import com.victor.strategyjava.context.SocialActivity;
 
 public class Main {
@@ -22,5 +19,6 @@ public class Main {
         socialActivityContext.useAdapter(new TwitterAdapter()).shareLink(URL);
         socialActivityContext.useAdapter(new LinkedinAdapter()).shareLink(URL);
         socialActivityContext.useAdapter(new WhatsAppAdapter()).shareLink(URL);
+        socialActivityContext.useAdapter(new InstagramAdapter()).shareLink(URL);
     }
 }
